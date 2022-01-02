@@ -2,7 +2,7 @@
 :root {
     --main-color: #2A0E46;
     --sec-color: #4965FF;
-    --bg-color: #F2F2F2;
+    --bg-color: #ffffff;
     --main-transtation: 0.5s ease;
     --sec-transtation: 0.7s ease;
 }
@@ -260,7 +260,7 @@ section {
 }
 
 .projects .title {
-    color: var(--sec-color);
+    color: var(--bg-color);
 }
 
 .projects .content {
@@ -337,7 +337,7 @@ section {
 }
 
 .contact .title {
-    color: var(--sec-color);
+    color: var(--bg-color);
 }
 
 .contact .icon {
@@ -350,7 +350,7 @@ section {
 
 .footer {
     background-color: #100519;
-    color: #fff;
+    color: var(--bg-color);
     padding: 1.5em;
     display: flex;
     justify-content: space-between;
@@ -362,6 +362,10 @@ section {
 }
 
 .footer-title span {
+    color: var(--bg-color);
+}
+
+.footer-title span:hover {
     color: var(--sec-color);
 }
 
