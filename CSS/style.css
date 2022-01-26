@@ -8,6 +8,9 @@
 }
 /* End Varlables */
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+
+
 /* Start Scroll Bar */
 
 ::-webkit-scrollbar {
@@ -67,55 +70,6 @@ header {
     width: 8em;
 }
 
-#toggle {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 27px;
-    border-radius: 10px;
-    background-color: var(--main-color);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: var(--main-transtation);
-    margin: 6px 200px;
-    display: none;
-}
-
-#toggle::before {
-    content: "";
-    position: absolute;
-    width: 28px;
-    height: 2px;
-    background-color: #fff;
-    transform: translateY(-5px);
-    transition: var(--main-transtation);
-}
-
-#toggle::after {
-    content: "";
-    position: absolute;
-    width: 28px;
-    height: 2px;
-    background-color: #f4f4f4;
-    transform: translateY(5px);
-    transition: var(--main-transtation);
-}
-
-#toggle.active::before {
-    transform: translateY(0px) rotate(45deg);
-
-}
-
-#toggle.active::after {
-    transform: translateY(0px) rotate(-45deg);
-}
-
-#toggle.active {
-    background-color: var(--sec-color);
-}
-
 .nav a {
     color: var(--main-color);
     font-weight: 400;
@@ -145,6 +99,7 @@ section {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    transition: var(--main-transtation);
 }
 
 .landing h2 {
@@ -348,73 +303,112 @@ section {
 
 /* Start Footer */
 
+footer {
+    align-items: center;
+}
+
 .footer {
     background-color: #100519;
     color: var(--bg-color);
     padding: 1.5em;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .footer-title {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 500;
 }
 
+.footer-title span > i {
+    font-size: 1.2em;
+    color: #f3950d;
+    margin-left: 5px;
+}
+
 .footer-title span {
+    cursor: pointer;
     color: var(--bg-color);
 }
 
 .footer-title span:hover {
+    color: #f3950d;
+}
+
+.footer .social-icons {
+    font-size: 1.1em;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.footer .pay-ways a {
+    font-size: 1.1em;
+    margin-right: 5px;
+    cursor: pointer;
+    color: var(--bg-color);
+}
+
+.pay-ways i {
+    font-size: 1.2em;
     color: var(--sec-color);
 }
 
-.footer .social-icons a {
+.social-icons-ft i:hover {
+    color: #f3950d;
+}
+
+.pay-ways a:hover {
+    color: #f3950d;
+}
+
+.pay-ways i:hover {
+    color: var(--bg-color);
+}
+
+.social-icons-ft a {
+    color: var(--bg-color);
     font-size: 1.1em;
-    padding-right: 15px;
-    cursor: pointer;
+    padding-right: 25px;
+}
+
+.social-icons-ft {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons-ft p {
+    margin-right: 15px;
 }
 
 .footer .go-up #myBtn {
     color: var(--bg-color);
     font: 1.2em;
+    cursor: pointer;
 }
 
 .footer .go-up #myBtn:hover {
     transform: scale(1.2);
-    color: var(--sec-color);
+    color: #f3950d;
 }
 
 /* End Footer */
-
-
-/* Responsive */
 
 @media (max-width:1023px){
     header{
         padding: 12px 20px;
     }
-
     .nav a{
         padding-left: 10px;
     }
-
     .title{
         font-size: 1.8em;
     }
-
     section{
         padding: 80px 20px;
     }
-
-    .landing h2{
-        font-size: 1em;
-    }
-
-    .landing h3{
-        font-size: 1.6em;
-    }
-
     .content{
         flex-direction: column;
         align-items: center;
@@ -431,8 +425,8 @@ section {
         background-size: 125em;
         display: flex;
         align-items: center;
-        justify-content: center;
-        text-align: center;
+        justify-content: flex-start;
+        transition: var(--main-transtation);
     }
     .btn {
         display: flex;
@@ -457,10 +451,31 @@ section {
         align-items: center;
     }
     .landing h2{
-        font-size: 1.3em;
+        font-size: 1em;
     }
     .landing h3{
         font-size: 1em;
+    }
+    .landing {
+        background-position: -60em;
+        background-size: 160em;
+        transition: var(--main-transtation);
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #myBtn {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
     }
     .footer {
         display: flex;
@@ -470,17 +485,3 @@ section {
         flex-wrap: wrap;
     }
 }
-
-@media (max-width:300px){
-    body{
-        font-size: 10px;
-    }
-
-    .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    }
