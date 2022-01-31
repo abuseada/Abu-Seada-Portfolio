@@ -1,4 +1,6 @@
 
+/* ======================================================================== */
+
 // Scroll
 
 //Get the button:
@@ -19,4 +21,18 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+/* ======================================================================== */
+
+let section = document.querySelector(".about-me");
+let spansProgress = document.querySelectorAll(".the-progress span");
+
+window.onscroll = function () {
+  if (window.scrollY >= section.offsetTop - 450) {
+    console.log("Reached Section About");
+    spansProgress.forEach((span) => {
+      span.style.width = span.dataset.width;
+    });
+  }
 }
