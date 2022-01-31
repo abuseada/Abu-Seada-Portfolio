@@ -50,6 +50,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 /* End global Rules */
 
 /* Start Header */
@@ -150,6 +154,86 @@ section {
 }
 
 /* End Landing Page */
+
+/* Start About */
+
+.about-me .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-about .my-name {
+    color: #f3950d;
+    font-size: 1.4em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text-about .my-name span {
+    color: var(--sec-color);
+}
+
+.text-about p {
+    margin-top: 20px;
+}
+
+.text-about p, p > span, li {
+    font-size: 1.12em;
+    max-width: 520px;
+    margin-right: 80px;
+}
+
+.text-about li span {
+    color: var(--sec-color);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.start-p, .end-p {
+    color: var(--sec-color);
+}
+
+.skills {
+    flex: 1;
+    margin-top: 45px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+
+.skill h3 span {
+    font-size: 14px;
+    padding: 3px 5px;
+    color: var(--sec-color);
+}
+
+.skill .the-progress {
+    height: 15px;
+    background-color: #eee;
+    position: relative;
+}
+
+.skill .the-progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--sec-color);
+    transition: width 0.6s ease-in-out;
+}
+
+/* End About */
 
 /* Start Services */
 
