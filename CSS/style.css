@@ -457,8 +457,8 @@ footer {
         font-size: 1em;
     }
     .landing {
-        background-position: -60em;
-        background-size: 160em;
+        background-position: -77em;
+        background-size: 150em;
         transition: var(--main-transtation);
     }
     .footer {
@@ -470,6 +470,13 @@ footer {
     }
     #myBtn {
         margin: 10px 0;
+    }
+}
+
+@media (max-width: 450px){
+    .landing {
+        background-position: -75em;
+        transition: var(--main-transtation);
     }
 }
 
