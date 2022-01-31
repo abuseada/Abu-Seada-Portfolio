@@ -67,6 +67,54 @@
 
     <!-- End Landing Page -->
 
+    <!-- Start About Me -->
+
+    <section id="about-me" class="about-me">
+        <h2 class="title">About Me</h2>
+        <div class="container">
+            <div class="text-about">
+                <h3 class="my-name">
+                    Ibrahim <span class="auto-input-name"></span>
+                </h3>
+                <p>
+                    <span class="start-p">Hello ..!</span>
+                    <li>I am a Graphic Designer and Web Designer have over than <span>4 years</span> of experience.</li>
+                    <li>I work in many disciplines with clients from all over the world.</li>
+                    <li>Waiting to help you design your brand. Contact me if you have any questions.</li>
+                    <span class="end-p">Thanks..! </span>
+                </p>
+            </div>
+            <div class="skills">
+                <div class="skill">
+                    <h3>Social Media Design <span>87%</span></h3>
+                    <div class="the-progress">
+                        <span style="width: 0" data-width="87%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Logo Design <span>63%</span></h3>
+                    <div class="the-progress">
+                        <span style="width: 0" data-width="63%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>UI/UX Design <span>75%</span></h3>
+                    <div class="the-progress">
+                        <span style="width: 0" data-width="75%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Facebook ADS <span>68%</span></h3>
+                    <div class="the-progress">
+                        <span style="width: 0" data-width="68%"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End About Me -->
+
     <!-- Start Services -->
 
     <section id="services" class="cards">
@@ -206,7 +254,7 @@
             </div>
             <div class="project-card">
                 <div class="project-img">
-                    <img src="/stock/تصميم-صورة-مصغرة.png" alt="Design Thumbnail">
+                    <a href="https://youtu.be/UiWT4rXuKgk"><img src="/stock/تصميم-صورة-مصغرة.png" alt="Design Thumbnail"></a>
                 </div>
                 <div class="project-info">
                     <p class="project-category">Graphic Design</p>
@@ -218,7 +266,7 @@
             </div>
             <div class="project-card">
                 <div class="project-img">
-                    <img src="/stock/تصميم-لوجو-بسيط.png" alt="Design Logo In Illustrator">
+                    <a href="https://youtu.be/rba74U4JeZ4"><img src="/stock/تصميم-لوجو-بسيط.png" alt="Design Logo In Illustrator"></a>
                 </div>
                 <div class="project-info">
                     <p class="project-category">Logo Design</p>
@@ -321,6 +369,15 @@
         strings: ["Graphic Designer", "Web Designer", "UI/UX Designer"],
         typeSpeed: 150,
         backSpeed: 150,
+        loop: true
+        });
+    </script>
+    <script>
+        // Typed Effect
+        var typed = new Typed(".auto-input-name", {
+        strings: ["Abu Seada"],
+        typeSpeed: 200,
+        backSpeed: 200,
         loop: true
         });
     </script>
