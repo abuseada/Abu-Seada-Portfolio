@@ -163,6 +163,7 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .text-about .my-name {
@@ -182,7 +183,7 @@ section {
 
 .text-about p, p > span, li {
     font-size: 1.12em;
-    max-width: 520px;
+    max-width: 500px;
     margin-right: 80px;
 }
 
